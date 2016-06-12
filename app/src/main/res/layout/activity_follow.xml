@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.showjoy.tashow.view.SwipeListView
+        android:id="@+id/swipeListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/colorDiv"
+        android:dividerHeight="1px"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@color/transparent"
+        android:overScrollMode="never"
+        android:paddingLeft="15dp"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/txt_no_attention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="137dp"
+        android:gravity="center"
+        android:text="您还未关注任何好友哦~"
+        android:textColor="@color/colorTxtBlack"
+        android:textSize="16sp"
+        android:visibility="gone" />
+</RelativeLayout>
+

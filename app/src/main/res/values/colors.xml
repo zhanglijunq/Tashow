@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorText">#22222E</color>
+    <color name="black">#000000</color>
+    <color name="grass_green">#66E5CE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="tab_unselect">#DDDDDD</color>
+    <color name="tab_unchecked">#373745</color>
+    <color name="tab_bg_select">#141421</color>
+    <color name="tab_bg">#373745</color>
+    <color name="div_white">#E5E5E5</color>
+    <color name="colorBg">#F5F5F5</color>
+    <color name="div_et">#64646D</color>
+    <color name="colorBind">#66E5CE</color>
+    <color name="colorBlack">#444444</color>
+    <color name="colorSamber">#333333</color>
+    <color name="colorDiv">#EEEEEE</color>
+    <color name="colorHint">#5B5B67</color>
+    <color name="colorTxtBlack">#333333</color>
+    <color name="colorPink">#FF5797</color>
+
+    <!-- action_bar 的颜色 -->
+    <color name="camerasdk_action_bar">#292632</color>
+
+    <!-- action_bar 按钮按下的背景颜色 -->
+    <color name="camerasdk_action_bar_press">#ffffff</color>
+
+    <color name="camerasdk_main_bg">#e4e4e4</color>
+
+    <!-- 滤镜 -->
+    <color name="camerasdk_filter_tab_selected">#ffededed</color>
+    <color name="camerasdk_filter_tab_unselected">#ffffffff</color>
+
+    <!-- 所有的边线 -->
+    <color name="camerasdk_divider_color">#cdcdcd</color>
+
+    <color name="camerasdk_txt_normal">#ffffff</color>
+    <color name="camerasdk_txt_selected">#f1588f</color>
+</resources>

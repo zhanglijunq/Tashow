@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.showjoy.tashow"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:design:23.2.1'
+    compile 'com.squareup.okhttp:okhttp:2.7.0'
+    compile 'com.squareup.okio:okio:1.6.0'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.facebook.fresco:fresco:0.9.0+'
+    compile 'tv.danmaku.ijk.media:ijkplayer-java:0.5.1'
+    compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.5.1'
+    compile 'com.bigkoo:alertview:1.0.2'
+    compile 'org.greenrobot:eventbus:3.0.0'
+}

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:fitsSystemWindows="true"
+    tools:context=".LoginActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/img_sina"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:src="@drawable/sina_icon" />
+
+    <ImageView
+        android:id="@+id/img_wechat"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:layout_marginRight="47dp"
+        android:layout_toLeftOf="@id/img_sina"
+        android:src="@drawable/wechat_icon" />
+
+    <ImageView
+        android:id="@+id/img_tencent"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:layout_marginLeft="47dp"
+        android:layout_toRightOf="@id/img_sina"
+        android:src="@drawable/tencent_icon" />
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
+        android:src="@mipmap/hx_icon" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/transparent"
+        android:hint="请输入您的手机号"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:phoneNumber="true"
+        android:textColor="@color/colorText"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="260dp"
+        android:layout_height="1px"
+        android:layout_below="@id/et_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:alpha="0.2"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/ll_phone_code"
+        android:layout_width="260dp"
+        android:layout_height="59dp"
+        android:layout_below="@id/et_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="79"
+            android:background="@color/transparent"
+            android:gravity="bottom"
+            android:hint="请输入验证码" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="14dp"
+            android:alpha="0.2"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_get_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="47"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/grass_green"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="260dp"
+        android:layout_height="1px"
+        android:layout_below="@id/ll_phone_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:alpha="0.2"
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_phone_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/shape_half_login_in"
+        android:text="加入嗨秀"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="登录即表示同意嗨秀协议"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+</RelativeLayout>

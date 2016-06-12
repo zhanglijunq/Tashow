@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="416dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="horizontal"
+        android:paddingLeft="17dp"
+        android:paddingRight="13dp">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            fresco:roundAsCircle="true"
+            fresco:failureImage="@mipmap/hx_icon"
+            fresco:failureImageScaleType="centerInside"/>
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/img_head"
+            android:gravity="center_vertical"
+            android:textColor="@color/tab_bg_select"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_view_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/tab_bg_select"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:failureImage="@mipmap/hx_icon" />
+</LinearLayout>

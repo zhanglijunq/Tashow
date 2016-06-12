@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 仿QQ右滑删除置顶等操作的隐藏部分宽度 -->
+    <declare-styleable name="swipelistviewstyle">    
+        <attr name="right_width" format="dimension" />
+    </declare-styleable>
+</resources>
